@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Nikhilesh Rana' });
+  res.render('index', { title: 'HPSRLM' });
 });
 
 router.get("/:username",function(req,res){
