@@ -203,3 +203,23 @@ header .logo
     font-size: 2em;
   }
 }
+
+
+
+
+h3
+{
+  text-transform: uppercase;
+	background: linear-gradient(to right, #30d05d 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+h2
+{
+  text-transform: uppercase;
+	background: linear-gradient(to right, #d04030 0%, #635079 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
