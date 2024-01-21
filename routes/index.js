@@ -12,26 +12,28 @@ router.get("/login",function(req,res){
 });
 
 
-router.get("check-login",function(req,res){
-    const username = req.body.username;
-    const password = req.body.username;
-    console.log(username);
-    console.log(password);
-    if(username == "nikhilesh")
-    {
-      res.send("Welcome Admin");
-    }
-    else
-    {
-      res.send("Welcome User")
-    }
+router.post("/check-login",function(req,res){
+  const username= req.body.username;
+  const password = req.body.password;
+  // console.log(username);
+  // console.log(password);
+  if(username == "nikhileshrana" && password == "Brave222#")
+  {
+    res.send("Welcome Admin");
+    req.render("index");
+  }
+  else
+  {
+    res.send("Welcome User");
+  }
 });
-
 
 router.get("check-signup",function(req,res){
   const username = req.body.username;
   const email = req.body.username;
   const password = req.body.username;
+
+  
 });
 
 
