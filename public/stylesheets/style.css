@@ -1,0 +1,23 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  color: #00B7FF;
+}
+
+nav
+{
+  display: flex;
+}
+
+.nav-left>img
+{
+  border: 5px red solid;
+  max-width: 20vw;
+  max-height:10vh;
+}
