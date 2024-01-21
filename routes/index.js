@@ -7,8 +7,8 @@ router.get('/', function(req, res, next) {
 
 
 
-router.get("",function(req,res){
-
+router.get("/login",function(req,res){
+  res.render('login',{Announcement : "Hemlo"});
 });
 
 
