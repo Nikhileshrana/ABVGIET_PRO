@@ -19,12 +19,13 @@ router.post("/check-login",function(req,res){
   // console.log(password);
   if(username == "nikhileshrana" && password == "Brave222#")
   {
-    res.send("Welcome Admin");
-    req.render("index");
+    console.log("Logging as Admin Now");
+    res.render("admin",{username : req.params.username , password : req.params.password});
   }
   else
   {
-    res.send("Welcome User");
+    console.log("Logged in as User");
+    res.send(`Welcome User ${username}`);
   }
 });
 
