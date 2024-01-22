@@ -3,122 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
-    <link rel="stylesheet" href="/stylesheets/admin.css">
+    <title>User Management System</title>
+    <style>
+        /* ... (previous styles remain unchanged) */
+    </style>
 </head>
 <body>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
-<div id="mnu" class="msidenav">
-  <div class="logo">HPSRLM</div>
-  <div class="searchbar">
-    <input class="search">
-    <button class="sbtn"><i class="fa fa-search" aria-hidden="true"></i></button>
-  </div>
-  <div class="spacer"></div>
-  <button class="mbtn"><i class="fa fa-list icon" aria-hidden="true"></i> Option One</button>
-  <button class="mbtn"><i class="fa fa-shopping-cart icon" aria-hidden="true"></i> Option Two</button>
-  <button class="mbtn"><i class="fa fa-user icon" aria-hidden="true"></i> Option Three</button>
-  <button class="mbtn"><i class="fa fa-bolt icon" aria-hidden="true"></i> Option Four</button>
-  <button class="mbtn"><i class="fa fa-calendar icon" aria-hidden="true"></i> Option Five</button>
-</div>
+<header>
+    <h1>User Management System</h1>
+</header>
 
+<section>
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
 
-<div class="sidenav">
-  <div class="logo">HPSRLM</div>
-  <div class="searchbar">
-    <input class="search">
-    <button class="sbtn"><i class="fa fa-search" aria-hidden="true"></i></button>
-  </div>
-  <div class="spacer"></div>
-  <button class="mbtn"><i class="fa fa-list icon" aria-hidden="true"></i> Option One</button>
-  <button class="mbtn"><i class="fa fa-shopping-cart icon" aria-hidden="true"></i> Option Two</button>
-  <button class="mbtn"><i class="fa fa-user icon" aria-hidden="true"></i> Option Three</button>
-  <button class="mbtn"><i class="fa fa-bolt icon" aria-hidden="true"></i> Option Four</button>
-  <button class="mbtn"><i class="fa fa-calendar icon" aria-hidden="true"></i> Option Five</button>
-</div>
-<div class="content-area">
-  <div class="mobilebar">
-    <div class="logo sml">HPSRLM</div>
-    <div class="mbh">
-    <button class="mnubtn" onclick="slideMenu()"><i class="fa fa-bars" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="page-title">HPSRLM Inventory System</div>
-  <div class="page-desc">View and manage your stock</div>
-  <div class="content-bar">
-    <div class="itemnum">#0000</div>
-    <div class="itemtitle">Socks Red</div>
-    <div class="itemprice">$19.99 ea</div>
-    <div class="itemstock">18 In Stock</div>
-    <div class="btncontainer">
-    <button class="cbbtn"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-    <button class="cbbtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-    </div>
-  </div>
-   <div class="content-bar">
-    <div class="itemnum">#0001</div>
-    <div class="itemtitle">Socks Gray</div>
-    <div class="itemprice">$19.99 ea</div>
-    <div class="itemstock">15 In Stock</div>
-    <div class="btncontainer">
-    <button class="cbbtn"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-    <button class="cbbtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-    </div>
-  </div>
-   <div class="content-bar">
-    <div class="itemnum">#0002</div>
-    <div class="itemtitle">Socks Black</div>
-    <div class="itemprice">$19.99 ea</div>
-    <div class="itemstock">12 In Stock</div>
-    <div class="btncontainer">
-    <button class="cbbtn"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-    <button class="cbbtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-    </div>
-  </div>
-   <div class="content-bar">
-    <div class="itemnum">#0003</div>
-    <div class="itemtitle">Socks White</div>
-    <div class="itemprice">$19.99 ea</div>
-    <div class="itemstock">22 In Stock</div>
-    <div class="btncontainer">
-    <button class="cbbtn"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-    <button class="cbbtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-    </div>
-  </div>
-   <div class="content-bar">
-    <div class="itemnum">#0004</div>
-    <div class="itemtitle">Clean Spray</div>
-    <div class="itemprice">$7.99 ea</div>
-    <div class="itemstock">9 In Stock</div>
-    <div class="btncontainer">
-    <button class="cbbtn"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-    <button class="cbbtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-    </div>
-  </div>
-   <div class="content-bar">
-    <div class="itemnum">#0005</div>
-    <div class="itemtitle">Filter</div>
-    <div class="itemprice">$34.78 ea</div>
-    <div class="itemstock">5 In Stock</div>
-    <div class="btncontainer">
-    <button class="cbbtn"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-    <button class="cbbtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-    </div>
-  </div>
-   <div class="content-bar">
-    <div class="itemnum">#0006</div>
-    <div class="itemtitle">Green Hat</div>
-    <div class="itemprice">$22.00 ea</div>
-    <div class="itemstock">10 In Stock</div>
-    <div class="btncontainer">
-    <button class="cbbtn"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-    <button class="cbbtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-    </div>
-  </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
 
-</div>
+        <label for="accessLevel">Access Level:</label>
+        <select id="accessLevel" required>
+            <option value="administrator">Administrator</option>
+            <option value="manager">Manager</option>
+            <option value="employee">Employee</option>
+        </select>
+
+        <button type="button" onclick="addUser()">Add User</button>
+    </form>
+
+    <table id="userTable">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Access Level</th>
+            <th>Action</th>
+        </tr>
+    </table>
+</section>
+
+<script>
+    function addUser() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var accessLevel = document.getElementById('accessLevel').value;
+
+        if (name && email && accessLevel) {
+            var table = document.getElementById('userTable');
+            var row = table.insertRow(1);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+
+            cell1.innerHTML = name;
+            cell2.innerHTML = email;
+            cell3.innerHTML = accessLevel;
+            cell4.innerHTML = '<button onclick="deleteUser(this)">Delete</button>';
+
+            // Clear the input fields
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('accessLevel').value = 'administrator';
+        } else {
+            alert('Please enter all required fields.');
+        }
+    }
+
+    function deleteUser(btn) {
+        var row = btn.parentNode.parentNode;
+        row.parentNode.removeChild(row);
+    }
+</script>
+
 </body>
-<script src="/javascripts/admin.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <style>
+        /* ... (styles here) */
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Inventory Management System</h1>
+</header>
+
+<section>
+    <form id="inventoryForm">
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" required>
+
+        <label for="stock">Stock Available:</label>
+        <input type="number" id="stock" required>
+
+        <label for="sellingPrice">Selling Price:</label>
+        <input type="number" id="sellingPrice" required>
+
+        <label for="makingCost">Making Cost:</label>
+        <input type="number" id="makingCost" required>
+
+        <label for="processingCost">Processing Cost:</label>
+        <input type="number" id="processingCost" required>
+
+        <label for="barcode">Barcode:</label>
+        <input type="text" id="barcode">
+
+        <button type="button" onclick="addItem()">Add Item</button>
+    </form>
+
+    <table id="inventoryTable">
+        <tr>
+            <th>Item Name</th>
+            <th>Stock Available</th>
+            <th>Selling Price</th>
+            <th>Making Cost</th>
+            <th>Processing Cost</th>
+            <th>Barcode</th>
+            <th>Action</th>
+        </tr>
+    </table>
+</section>
+
+<script>
+    function addItem() {
+        var itemName = document.getElementById('itemName').value;
+        var stock = document.getElementById('stock').value;
+        var sellingPrice = document.getElementById('sellingPrice').value;
+        var makingCost = document.getElementById('makingCost').value;
+        var processingCost = document.getElementById('processingCost').value;
+        var barcode = document.getElementById('barcode').value;
+
+        if (itemName && stock && sellingPrice && makingCost && processingCost) {
+            var table = document.getElementById('inventoryTable');
+            var row = table.insertRow(1);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            var cell5 = row.insertCell(4);
+            var cell6 = row.insertCell(5);
+            var cell7 = row.insertCell(6);
+
+            cell1.innerHTML = itemName;
+            cell2.innerHTML = stock;
+            cell3.innerHTML = sellingPrice;
+            cell4.innerHTML = makingCost;
+            cell5.innerHTML = processingCost;
+            cell6.innerHTML = barcode || 'N/A';
+            cell7.innerHTML = '<button onclick="deleteItem(this)">Delete</button>';
+
+            // Clear the input fields
+            document.getElementById('itemName').value = '';
+            document.getElementById('stock').value = '';
+            document.getElementById('sellingPrice').value = '';
+            document.getElementById('makingCost').value = '';
+            document.getElementById('processingCost').value = '';
+            document.getElementById('barcode').value = '';
+        } else {
+            alert('Please enter all required fields.');
+        }
+    }
+
+    function deleteItem(btn) {
+        var row = btn.parentNode.parentNode;
+        row.parentNode.removeChild(row);
+    }
+</script>
+
+</body>
 </html>
