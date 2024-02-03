@@ -17,7 +17,7 @@ router.post("/check-login",function(req,res){
   const password = req.body.password;
   // console.log(username);
   // console.log(password);
-  if(username == "nikhileshrana" && password == "Brave222#")
+  if(username == "nikhileshrana" && password == "Brave222#" || username == "abvgiet" && password == "abvgiet")
   {
     console.log("Logging as Admin Now");
     res.render("admin",{username : req.params.username , password : req.params.password});
