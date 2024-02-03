@@ -25,7 +25,7 @@ router.post("/check-login",function(req,res){
   else
   {
     console.log("Logged in as User");
-    res.send(`Welcome User ${username}`);
+    res.render("login");
   }
 });
 
@@ -33,8 +33,6 @@ router.get("check-signup",function(req,res){
   const username = req.body.username;
   const email = req.body.username;
   const password = req.body.username;
-
-  
 });
 
 

@@ -1,0 +1,46 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1
+{
+    font-size: 4vw;
+    text-align: center;
+}
+
+#userForm ,#inventoryForm
+{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 500px;
+    min-width: 320px;
+    text-align: center;
+}
+
+#inventoryForm>div , #userForm>div
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#inventoryTable , #userTable
+{
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.5rem;
+}
+
+tr
+{
+    border: 1px red solid;
+    display:flex ;
+    justify-content: space-around;
+    gap: 5vw;
+    min-width: 100%;
+}
+

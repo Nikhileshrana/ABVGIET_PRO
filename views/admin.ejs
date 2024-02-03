@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Management System</title>
-    <style>
-        /* ... (previous styles remain unchanged) */
-    </style>
+    <title>Store Management System</title>
+    <link rel="stylesheet" href="/stylesheets/admin.css">
 </head>
 <body>
 
@@ -16,20 +14,28 @@
 
 <section>
     <form id="userForm">
+        <div>
         <label for="name">Name:</label>
         <input type="text" id="name" required>
+        </div>
 
+        <div>
         <label for="email">Email:</label>
         <input type="email" id="email" required>
+        </div>
 
+        <div>
         <label for="accessLevel">Access Level:</label>
         <select id="accessLevel" required>
             <option value="administrator">Administrator</option>
             <option value="manager">Manager</option>
             <option value="employee">Employee</option>
         </select>
+        </div>
 
+        <div>
         <button type="button" onclick="addUser()">Add User</button>
+        </div>
     </form>
 
     <table id="userTable">
@@ -76,8 +82,6 @@
     }
 </script>
 
-</body>
-</html>
 
 
 
@@ -85,32 +89,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventory Management System</title>
-    <style>
-        /* ... (styles here) */
-    </style>
-</head>
-<body>
 
 <header>
     <h1>Inventory Management System</h1>
@@ -118,25 +96,40 @@
 
 <section>
     <form id="inventoryForm">
+    <div>
         <label for="itemName">Item Name:</label>
         <input type="text" id="itemName" required>
+    </div>
 
+    <div>
         <label for="stock">Stock Available:</label>
         <input type="number" id="stock" required>
+    </div>
 
+    <div>
         <label for="sellingPrice">Selling Price:</label>
         <input type="number" id="sellingPrice" required>
+    </div>
 
+    <div>
         <label for="makingCost">Making Cost:</label>
         <input type="number" id="makingCost" required>
+    </div>
 
+    <div>
         <label for="processingCost">Processing Cost:</label>
         <input type="number" id="processingCost" required>
+    </div>
 
+    <div>
         <label for="barcode">Barcode:</label>
         <input type="text" id="barcode">
+    </div>
 
+    <div>
         <button type="button" onclick="addItem()">Add Item</button>
+    </div>
+
     </form>
 
     <table id="inventoryTable">
@@ -197,6 +190,9 @@
         row.parentNode.removeChild(row);
     }
 </script>
+
+
+
 
 </body>
 </html>
