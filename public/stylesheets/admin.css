@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+
 *
 {
     margin: 0px;
@@ -7,37 +10,83 @@
 
 h1
 {
-    font-size: 4vw;
+    background:linear-gradient(180deg ,rgb(0, 0, 0) 0% , rgb(35, 28, 73) 100%);
+    padding: 0.5vw;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 3vh;
+    font-weight: 200;
     text-align: center;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
 #userForm ,#inventoryForm
 {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: aliceblue;
+    border-radius: 20px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    max-width: 500px;
     min-width: 320px;
+    margin:4vw;
     text-align: center;
+    font-family: 'Exo 2', sans-serif;
 }
 
 #inventoryForm>div , #userForm>div
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 1vw;
+    font-size: 2vw;
+    font-weight: bold;
 }
+
+#inventoryForm>div>div , #userForm>div>div
+{
+    width: 100%;
+    text-align: left;    
+    padding: 3px;
+}
+
 
 #inventoryTable , #userTable
 {
     display: flex;
     justify-content: space-around;
-    font-size: 0.5rem;
+    font-size: 2vw;
+    font-family: 'Exo 2', sans-serif;
+    margin: 0 auto;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 1vw;
+}
+
+input
+{
+    width: 70vw;
+    border-radius: 5px;
+    padding: 2px;
+    border: 0.5px;
+    background-color: rgb(215, 216, 245);
+}
+
+button
+{
+    border: 0px;
+    background-color: rgb(184, 186, 240);
+    padding: 0.5vw;
+    border-radius: 5px;
+    font-size: 1.8vw;
+    font-weight: bold
 }
 
 tr
 {
-    border: 1px red solid;
+    background-color: aliceblue;
+    padding: 1vw;
+    border-radius: 20px;
     display:flex ;
     justify-content: space-around;
     gap: 5vw;
